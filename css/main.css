@@ -1,0 +1,1115 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+  font-family: 'lato', sans-serif;
+  font-size: 1em;
+  color: #a2e8dd;
+  text-align: left;
+}
+
+ul, 
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #a2e8dd;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2.25em;
+  font-weight: 700;
+  margin: 0;
+  color: #a2e8dd;
+}
+
+h3 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.35em;
+  font-weight: 600;
+}
+
+h4 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.15em;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.25em;
+  line-height: 1.285;
+}
+
+img {
+  width: 100%;
+
+}
+
+figure{
+  margin: 0;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+  
+/****** HEADER - FOOTER STYLES******/
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background: #152A3E;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+}
+
+header {
+  padding: 20px 0;
+}
+
+header h1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.25em;
+  font-weight: 900;
+  margin: 0;
+  padding: 10px 0;
+}
+
+header nav {
+  width: 95%;
+  font-size: .875em;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;  
+  padding: 15px 0;
+}
+
+header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;  
+}
+
+header nav a {
+  padding: 0 10px;
+}
+
+.navbar a:hover {
+  color: #152A3E;
+  border-radius: 25px;
+  background: #5BC0BE;
+  padding: 10px;
+  width: 200px;
+  height: 150px;
+}
+
+footer .content-wrapper {
+  margin: 0;  
+}
+
+footer{
+  text-align: center;
+  flex-direction: column;
+  padding: 30px 0 60px 0;
+}
+
+footer h2 {
+  padding: 40px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .contact-info i {
+  font-size: 2em;
+  padding: 0 15px 10px 0;
+}
+
+footer .social-icons i {
+  font-size: 2.25em;
+  color: #a2e8dd;
+  padding: 0 20px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  width: 100%;
+}
+
+.social {
+  padding-top: 25px;
+}
+
+.contact-info {
+  padding-top: 40px;
+}
+
+.copyright {
+  margin-top: 80px;
+  font-weight: 500;
+}
+
+/*** Hero Area ***/
+.hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background: url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+}
+
+.hero-area h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size:  2em;  
+  line-height: 1.2;
+  font-weight: 700;
+  color: black;
+  text-shadow: 2px 2px #5BC0BE;
+  padding: 25px 0;    
+}
+
+.hero-area p {
+  font-size: .3em;
+  padding-top: 80px;
+  color: #152A3E;
+}
+
+.hero-area a {
+  color: #152A3E;
+}
+
+/*========================
+Homepage Page
+=========================*/
+
+/****** ABOUT SECTION ******/
+
+#about {
+  background: #5BC0BE;
+}
+
+#about h2 {
+  color: #152A3E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0 40px 0;
+}
+
+#about .content-wrapper {
+  width: 80%;
+  color: #152A3E;
+  padding-bottom: 80px;
+}
+
+#about img {
+  width: 95%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-title {
+  line-height: .5;
+  padding-bottom: 10px;
+}
+
+.profile-title h3 {
+  font-weight: 900;
+}
+
+.profile-title h4 {
+  font-weight: 700;
+}
+
+.profile-bio {
+  line-height: .5;
+  padding: 0 5px;
+}
+
+/****** SKILLS SECTION ******/
+
+#skills {
+  background: #a2e8dd;    
+}
+
+#skills .content-wrapper {    
+  width: 100%;    
+}
+
+#skills img {
+  width: 100%;
+}
+
+#skills h2 {
+  color: #152A3E;
+  padding: 80px 0 15px 40px;
+}
+
+#skills ol {
+ width: 80%;
+ display: flex;
+ justify-content: space-between;
+ align-items: start;
+ flex-flow: row wrap;
+ line-height: 1.5;
+ padding: 0 40px;
+ color: #152A3E;
+}
+
+#skills ol li {
+ width: 40%;
+ font-size: 1em;
+}
+
+.skills-image {
+  position: relative;
+  text-align: left;
+} 
+
+.skills-image p {
+  position: absolute;
+ 
+     
+}
+
+.skills-image p, a{  
+  color: #5BC0BE;  
+}
+
+.tools-info {
+  padding-bottom: 60px;
+}
+
+.image-container figure {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/**Certification**/
+
+.certification {
+  padding: 0 0 60px 45px;
+}
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+/*========================
+Portfolio Page
+=========================*/
+   
+/****** PROJECTS ******/
+
+.portfolio {
+  background-color: #5BC0BE;
+}
+
+.portfolio .content-wrapper {
+  width: 85%;
+  color: #152A3E;
+  padding: 20px 0 80px 0;
+}
+
+.portfolio h2 {
+  display: flex;
+  justify-content: center;    
+  align-content: center;
+  color: #152A3E;
+  padding: 60px 0;
+}
+
+.portfolio p {
+  padding: 0 60px 0 0;
+}
+
+.project-skills ol{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-flow: row wrap;
+  line-height: 1.5;
+  padding-bottom: 60px;
+}
+
+.project-skills ol li {
+  width: 50%;
+  font-size: 1.25em;
+}
+
+.portfolio-project {
+  background: #a2e8dd;
+}
+
+.portfolio figure {
+  padding: 80px 0 5px 0;
+  background: #5BC0BE;
+}
+
+.portfolio h3,
+.project-skills,
+.project-description {
+  padding: 0 25px;
+}
+
+.portfolio img:hover {
+  box-shadow: 0 0 2px 1px #152A3E;
+}
+
+.repo-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #152A3E;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 9px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*======================
+      CONTACT PAGE
+======================*/
+
+.contact-container {
+  margin: 0;
+  background-color: #5BC0BE;
+}
+
+.contact-header {
+  color: #152A3E;
+  text-align: center;
+  padding: 60px 25px;
+  border: 8px double #a2e8dd;
+}
+
+.contact-header h2 {
+  color: #152A3E;
+  font-size: 2.2em;
+}
+.contact-header a i {
+  font-size: 4.5em;
+  padding: 40px 45px;
+  color: #152A3E;
+}
+
+.contact-image {
+  width: 100%;
+}
+
+.contact-image {
+  position: relative;
+  text-align: left;
+} 
+
+.contact-image p {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: .35em;     
+}
+
+.contact-image p, a{  
+  color: #5BC0BE;  
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #152A3E;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #5BC0BE;
+}
+
+/* Add a background color and some padding around the form */
+.form-container {
+  border-radius: 5px;
+  background-color: #a2e8dd;
+  padding: 30px 25px 100px 25px;
+  color: #152A3E;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 48em){
+  /*Tablet styles*/
+  
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  header nav {
+    width: 90%;
+    font-size: 1.4em;
+  }
+
+  .hero-area {
+    min-height: 650px;
+  }
+
+  .hero-area h2 {
+    font-size: 4.5em;
+    text-shadow: 4px 4px #5BC0BE;
+  }
+
+  .hero-area p {
+    font-size: .75em;
+    padding-top: 315px;
+  }  
+
+  .button {
+    width: 30%;
+  }
+
+  .certification {
+    padding: 60px 250px;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  /* Style adjustments for viewports that meet the condition */
+
+  /*Desktop styles here*/
+
+  /*Header-Footer-Hero*/
+  header .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-flow: row nowrap;
+  }
+
+  header {
+    padding: 20px 0;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  header nav {
+    width: 38%;
+    font-size: 1.15em;
+  }
+
+  footer {
+    padding: 15px;
+  }
+
+  footer .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-flow: row wrap;
+    width: 55%;
+  }
+
+  .contact-info {
+    padding-top: 60px;
+  }
+
+  footer h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-flow: row;
+    font-size: 2.5em;
+  }
+
+  .copyright {
+    width: 100%;
+  }
+ 
+  .hero-area {
+    min-height: 850px;
+  }
+
+  .hero-area h2 {
+    font-size: 6.5em;
+    text-shadow: 5px 5px #5BC0BE;
+  }
+
+  .hero-area p {
+    font-size: .55em;
+    padding-top: 500px;
+  }
+
+  /*Homepage*/
+
+  #about h2 {   
+    font-size: 2.5em;
+  }
+
+  #about .content-wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-flow: row;
+  }
+
+  #about h3 {
+    font-size: 1.75em;
+  }
+
+  #about h4 {
+    font-size: 1.5em;
+  }
+
+  #about p {
+    font-size: 1.3em;
+  }
+
+  .profile-title {
+    width: 35%;
+    padding: 40px 0px;
+  }
+
+  .profile-bio {
+    width: 60%;
+    padding: 40px;
+  }
+
+  .profile-title h3, h4 {
+    padding-left: 10px;
+  }
+
+  #skills .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-flow: row;
+    margin: 0;
+    padding: 0;
+  }
+
+  #skills ol {
+    padding: 0;
+  }
+  
+  #skills ol li {
+    font-size: 1em;
+  }
+
+  #skills h2 {
+    font-size: 2em;
+    padding: 0;
+    line-height: 2;
+  }
+
+  .skills-image {
+    width: 38%;
+    display: flex;
+    padding-right: 25px;
+  }
+
+  .skills-image p {
+    font-size: .5em;
+    bottom: 1.5px;
+  }
+
+  .tools-info  {
+    padding: 45px;
+    line-height: 1.2;
+  }
+
+  .skills-info {
+    padding: 45px 0;
+    line-height: 1.2;
+  }
+
+  .button{
+    width: 50%;
+    margin: 25px 0;
+  }
+  .certification {
+    padding: 42px 50px 50px 0;
+  }
+
+  #myImg {
+    padding-left: 0;
+  }
+
+  /*Portfolio Page*/
+  .portfolio h2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;       
+    font-size: 2.5em;
+  }
+
+  .portfolio .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-flow: row wrap;
+  } 
+
+ .portfolio article {
+    width: 45%;
+    display: flex;   
+  }
+
+  .portfolio h3 {
+    font-size: 1.75em;
+  }
+
+  .portfolio h4 {
+    font-size: 1.5em;
+  }
+
+  .portfolio p {
+    font-size: 1.3em;
+  }
+
+  .portfolio ol li {
+    font-size: 1.3em;
+  }
+
+  .button {
+    width: 250px;
+  }
+
+  /**Contact Page**/
+  .contact-container {
+    display: flex;
+    padding: 60px 120px;
+  }
+
+  .contact-header {
+    width: 90%;
+  }
+  .contact-header a i {
+    font-size: 3.8em;
+  }
+
+  .contact-header h2 {
+    padding: 30px 0 0 0;
+  }
+
+  .contact-image {
+    width: 98.3%;
+  }
+
+  .form-container {
+    width: 300%;
+    padding: 100px 20px 50px 25px;
+  }
+}
+  
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
